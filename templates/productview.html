@@ -1,0 +1,42 @@
+{% extends 'layouts/main.html' %}
+
+{% load static %}
+
+{% block css %}
+<style>
+    /* Your existing CSS styles */
+</style>
+{% endblock css %}
+
+{% block body %}
+
+<section class="product_section layout_padding">
+    <div class="container">
+       <div class="heading_container heading_center">
+          <h2>
+             Your <span>Cart</span>
+          </h2>
+       </div>
+       <div class="row">
+          <!-- Product boxes with Add to Cart button -->
+    
+          <div class="col-sm-6 col-md-4 col-lg-4">
+             
+                <div class="img-box">
+                    <img src="{% static 'images/p1.png' %}" alt="{{ product.name }}">
+                </div>
+                <div class="detail-box">
+                   <h5>mens shirt</h5>
+                   <h6>Rs.799</h6>
+                </div>
+             </div>
+          </div>
+
+       </div>
+       <div class="btn-box">
+          <a href="#">Buy Now</a>
+       </div>
+    </div>
+ </section>
+
+{% endblock body %}
